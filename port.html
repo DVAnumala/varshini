@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-128/wink-1406629-1188749.png">
+    <style>
+    html {
+      background-color: rgb(251, 244, 246);
+      font-size: 15px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+      padding: 0;
+      width:max-content;
+    }
+    a {
+      text-decoration: none;
+    } 
+    #header{
+        background-color:rgb(246, 212, 239);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        transition: 0.5s ease background-color;
+    } 
+    h1{
+        font-size: 30px;
+        font-family:cursive;
+        padding: 15px;
+        text-align:justify;
+        color:crimson;
+    }
+    h2{
+        font-size: 20px;
+        font-family:cursive;
+        padding: 5px;
+        text-align:justify;
+        color:black;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        font-size: 20px;
+        margin-left: 600px;
+    }
+    li{
+        padding: 10px;
+    }
+    a:visited{
+        color: rgb(0, 0, 0);
+    }
+    a:hover{
+        color: rgb(140, 106, 106);
+    }
+    .name{
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color:darkslateblue;
+    }
+    .name:hover{
+        color: rgb(117, 10, 10);
+    }
+    #footer{
+        background-color:rgb(246, 212, 239);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        transition: 0.5s ease background-color;
+        text-align: center;
+        padding:10px;
+        display:inline-block;
+    }
+    .social-item{
+        display:inline-block;
+        padding: 5px;
+    }
+    #contact{
+        text-align: center;
+        padding:5px;
+    }
+    .contact-item{
+        width: 30%;
+        text-align: center;
+        border:3px groove thistle;
+        display:inline-block;
+        padding: 3px;
+    }
+    .contact-item:hover{
+        border-color: rgb(255, 255, 255);
+    }
+    #index p{
+        font-size: 20px;
+        font-family:serif;
+        color:cornflowerblue
+    }
+    .imn{
+        float: right;
+        flex-direction: row;
+        padding:10px;
+        border: 2px solid teal;
+    }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <section id="header">
+        <div class="name">
+            <p>DIVYA VARSHINI</p>
+        </div>
+        <div class="container">
+            <div class="row">
+            <div class="header-menu">
+                <ul>
+                    <li><a href="#index">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#service">SKILLS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>            
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--header end-->
+    
+    <!--intro-->
+    <section id="index">
+        <h1>HI ALL !!</h1>
+        <p>My name is "VARSHINI"</p>
+        <div class="imn"><img src="data:image/jpeg;base64,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"></div>
+    </section>
+    <!--intro end-->
+
+    <!--about-->
+    <section id="about">
+        <h1>ABOUT ME:</h1>
+        <p>Myself <span>Divya Varshini</span> a student from <span>CSE</span> depatment <span>VITAP University</span></p>
+        <p>My hobbies are drawing, singing, dancing and reading books.</p>
+    </section>
+    <!--about end-->
+
+    <!--skills-->
+    <section id="service">
+        <h1>SKILLS:</h1>
+        <p>I am pretty decent at communication skills.</p>
+        <p>I am good at PYTHON, HTML, CSS, JAVA.</p>
+        <p>I can able to do front end developping for any kind of website.</p>
+            <div class="service-item">
+            <div class="imn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ_mhxuLkJtoK-Bxk9r7xalRM7K7g-RpzfsQ&usqp=CAU" ></div>
+            <h2>Web Design</h2>
+            <p>Completed web design course from well reputed institute.</p>
+            <p>Done few projects on web designing.</p>
+            <p>Worked for few websites and good at web designing.</p> 
+    </section>
+    <!--skills end-->
+
+    <!--contact-->
+    <section id="contact">
+        <h1>TO CONTACT:</h1>
+        <div class="contact-item">
+            <h2>Phone</h2>
+            <div class="icon"><img src="https://cdn.iconscout.com/icon/free/png-128/call-support-3561465-2985477.png" style="height:30px ;width:30px;"></div>
+            <p>+91 9441141525</p>
+        </div>
+        <div class="contact-item">
+            <h2>Email</h2>
+            <div class="icon"><img src="https://cdn.iconscout.com/icon/premium/png-128-thumb/mail-43-98582.png" style="height:30px ;width:30px;"></div>
+            <p>divyavarshini2004@outlook.com</p>
+        </div>
+        <div class="contact-item">
+            <h2>Address</h2>
+            <div class="icon"><img src="https://cdn.iconscout.com/icon/premium/png-128-thumb/address-2171068-1831152.png" style="height:30px ;width:30px;"></div>
+            <p>Poranki, Vijayawada, AndhraPradesh</p>
+        </div>
+        <!--contact end-->
+
+        <!--footer-->
+        <section id="footer">
+            <div class="footer container">
+              <div class="brand">
+                <div class="social-icon">
+                    <div class="social-item">
+                      <a href="https://wa.me/+91 9441141525 " target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-128/whatsapp-4069954-3365473.png" style="height:30px ;width:30px;"></a>
+                    </div>
+                    <div class="social-item">
+                      <a href="https://www.instagram.com/varshini.divya174/" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-128/instagram-4069926-3365445.png" style="height:30px ;width:30px;"></a>
+                    </div>
+                  </div>
+                  <p>© Copyright 2020. All rights reserved</p>
+                  <p>designed by Divya Varshini Anumala</p>
+                </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
